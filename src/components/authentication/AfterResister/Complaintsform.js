@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useSate, useState} from 'react'
 import { Link } from 'react-router-dom'
 import {
     MDBCard,
@@ -11,6 +11,7 @@ import {
     MDBCardImage,
 } from 'mdb-react-ui-kit'
 function Complaintsform(props) {
+    console.log(props.location)
     return (
         <div className="main-complaintsform">
             <style>{'body { background-color: #001948; }'}</style>
@@ -22,7 +23,7 @@ function Complaintsform(props) {
                         paddingBottom: 10,
                     }}
                 >
-                    Lodge your Complaint
+                    Lodge your Complaint {props.compName}
                 </h2>
                 <mdb-form-control>
                     <label
@@ -62,6 +63,7 @@ function Complaintsform(props) {
                         class="form-control"
                         placeholder="9999999999
                         "
+                        
                     />
                 </mdb-form-control>
 
