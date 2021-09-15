@@ -83,11 +83,11 @@ function Navbar() {
                                 </MDBNavbarLink>
                             </MDBNavbarItem>
 
-                            <MDBNavbarItem className="testimonials">
+                            {/* <MDBNavbarItem className="testimonials">
                                 <MDBNavbarLink onClick={handleLinkClick}>
                                     <Link to="/profile">Profile</Link>
                                 </MDBNavbarLink>
-                            </MDBNavbarItem>
+                            </MDBNavbarItem> */}
                             <MDBNavbarItem className="contact">
                                 <MDBNavbarLink onClick={handleLinkClick}>
                                     <Link to="/contact">Contact</Link>

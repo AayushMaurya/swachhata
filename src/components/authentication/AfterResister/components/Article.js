@@ -11,6 +11,7 @@ import {
 
 export default function Article() {
     return (
+        // <h1></h1>
         <MDBRow
             style={{ paddingTop: 60 }}
             className="row-cols-1 row-cols-md-3 g-4 pb-4"

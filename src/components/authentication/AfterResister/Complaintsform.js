@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-import React from 'react'
-=======
-import React,{useSate, useState} from 'react'
->>>>>>> 16be89d36dfefe2a1d0a8fe9a3b49d5cf0e81309
+import React, { useSate, useState } from 'react'
 import { Link } from 'react-router-dom'
 import {
     MDBCard,
@@ -15,10 +11,7 @@ import {
     MDBCardImage,
 } from 'mdb-react-ui-kit'
 function Complaintsform(props) {
-<<<<<<< HEAD
-=======
     console.log(props.location)
->>>>>>> 16be89d36dfefe2a1d0a8fe9a3b49d5cf0e81309
     return (
         <div className="main-complaintsform">
             <style>{'body { background-color: #001948; }'}</style>
@@ -30,11 +23,7 @@ function Complaintsform(props) {
                         paddingBottom: 10,
                     }}
                 >
-<<<<<<< HEAD
-                    Lodge your Complaint
-=======
                     Lodge your Complaint {props.compName}
->>>>>>> 16be89d36dfefe2a1d0a8fe9a3b49d5cf0e81309
                 </h2>
                 <mdb-form-control>
                     <label
@@ -74,10 +63,7 @@ function Complaintsform(props) {
                         class="form-control"
                         placeholder="9999999999
                         "
-<<<<<<< HEAD
-=======
-                        
->>>>>>> 16be89d36dfefe2a1d0a8fe9a3b49d5cf0e81309
+
                     />
                 </mdb-form-control>
 

@@ -54,11 +54,7 @@ function Complaints(props) {
                         </MDBCol>
                         <MDBCol>
                             <MDBCard>
-<<<<<<< HEAD
-                                <Link to="/complaintsform">
-=======
                                 <Link to="/complaintsform" >
->>>>>>> 16be89d36dfefe2a1d0a8fe9a3b49d5cf0e81309
                                     <MDBCardImage
                                         style={{ height: '13.5rem' }}
                                         src={burning}
