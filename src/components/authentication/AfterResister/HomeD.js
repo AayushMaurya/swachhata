@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import Article from '../AfterResister/components/Article'
 import ReactMapGL,{Marker} from 'react-map-gl'
 import * as binLoc from "./bin"
+import axios from 'axios'
 import RoomIcon from '@material-ui/icons/Room';
 import PersonPinIcon from '@material-ui/icons/PersonPin';
 import LocalShippingIcon from '@material-ui/icons/LocalShipping';
@@ -17,6 +18,11 @@ function HomeD() {
             let lat=data.coords.latitude
             let long=data.coords.longitude
             setLoc({lat:lat,long:long})
+            console.log(getLoc)
+            axios.post("http://localhost:8000/getDrLoc",{getLoc})
+           .then((res)=>{
+            console.log(res)
+         })
             }
             navigator.geolocation.watchPosition(
                 showLoc,error=>console.log(error),

@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useEffect, useState} from 'react'
 import Article from '../AfterResister/components/Article'
 import ReactMapGL,{Marker} from 'react-map-gl'
 
@@ -9,8 +9,18 @@ import PersonPinIcon from '@material-ui/icons/PersonPin';
 import LocalShippingIcon from '@material-ui/icons/LocalShipping';
 // import News from '../AfterResister/components/News'
 import Navbar from './components/Navbar'
+ 
 function Home() {
     const [getLoc,setLoc]= useState({lat:28.7041,long:77.1025});
+    const [getTruckLoc,setTruckLoc]=useState({lat:"",long:""})
+        useEffect(async () => {
+            await axios.get("http://localhost:8000/")
+            .then((res)=>{
+             setTruckLoc({lat:res.data[0].lat,long:res.data[0].long})
+              console.log(res.data[0].long)
+                
+              })
+           },(getTruckLoc))
     const track=()=>{
         
         
@@ -51,6 +61,9 @@ function Home() {
     >
         <Marker latitude={getLoc.lat} longitude={getLoc.long}>
         <div><PersonPinIcon style={{color:"green",fontSize:40}}/></div>
+      </Marker>
+      <Marker latitude={getTruckLoc.lat} longitude={getTruckLoc.long}>
+        <div><LocalShippingIcon style={{color:"black",fontSize:40}}/></div>
       </Marker>
       {
           binLoc.binLoc.map((obj,ind)=>{
