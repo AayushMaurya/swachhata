@@ -81,7 +81,7 @@ function Card() {
                     </MDBRow>
                     <MDBRow>
                         <MDBCol sm="12">
-                            <Link to="/userinfo">
+                            <Link to="/home">
                                 <button className="button--green button--green--round signup__card--button">
                                     Sign Up
                                 </button>
