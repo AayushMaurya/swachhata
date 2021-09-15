@@ -1,4 +1,4 @@
-import React,{useSate, useState} from 'react'
+import React, { useSate, useState } from 'react'
 import { Link } from 'react-router-dom'
 import {
     MDBCard,
@@ -63,7 +63,7 @@ function Complaintsform(props) {
                         class="form-control"
                         placeholder="9999999999
                         "
-                        
+
                     />
                 </mdb-form-control>
 

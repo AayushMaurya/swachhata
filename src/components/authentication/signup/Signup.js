@@ -7,11 +7,12 @@ function Signup() {
         <div className="signup">
             <div className="signup__flex-container">
                 <div className="signup__flex-child">
-                    <img
+                    <h1 style={{ color: "white" }}></h1>
+                    {/* <img
                         src={name}
                         alt="inovact-logo"
                         className="signup__logo"
-                    />
+                    /> */}
                 </div>
                 <div className="signup__flex-child">
                     <Card />

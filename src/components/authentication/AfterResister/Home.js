@@ -1,6 +1,6 @@
 import React,{useEffect, useState} from 'react'
 import Article from '../AfterResister/components/Article'
-import ReactMapGL,{Marker} from 'react-map-gl'
+import ReactMapGL, { Marker } from 'react-map-gl'
 
 import * as binLoc from "./bin"
 import axios from "axios";
@@ -26,18 +26,18 @@ function Home() {
         
         const showLoc=(data)=>{
             //console.log(data.coords.latitude);
-            let lat=data.coords.latitude
-            let long=data.coords.longitude
-            setLoc({lat:lat,long:long})
+            let lat = data.coords.latitude
+            let long = data.coords.longitude
+            setLoc({ lat: lat, long: long })
+        }
+        navigator.geolocation.watchPosition(
+            showLoc, error => console.log(error),
+            {
+                enableHighAccuracy: true,
+                timeout: 1000
             }
-            navigator.geolocation.watchPosition(
-                showLoc,error=>console.log(error),
-                {
-                    enableHighAccuracy:true,
-                    timeout:1000
-                }
-                
-            )
+
+        )
     }
     const [viewport, setViewport] = useState({
         width: '100vw',
@@ -45,11 +45,11 @@ function Home() {
         latitude: 28.7041,
         longitude: 77.1025,
         zoom: 16
-      });
+    });
 
     return (
         <div style={{ paddingTop: 4 }}>
-         <button  onClick={track} >Track the garbage vehicle </button>
+            <button >Track the garbage vehicle </button>
             <Navbar />
             {/* <News /> */}
 

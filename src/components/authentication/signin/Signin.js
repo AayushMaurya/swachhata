@@ -8,11 +8,12 @@ function Signin() {
         <div className="signin">
             <div className="signin__flex-container">
                 <div className="signin__flex-child">
-                    <img
+                    <h1 style={{ color: "white" }}></h1>
+                    {/* <img
                         src={name}
                         alt="inovact-logo"
                         className="signin__logo"
-                    />
+                    /> */}
                 </div>
                 <div className="signin__flex-child">
                     <Card />
