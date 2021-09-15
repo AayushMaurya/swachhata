@@ -79,6 +79,7 @@ function Card() {
                     ></img>
                 </a>
             </div>
+        
         </div>
     )
 }

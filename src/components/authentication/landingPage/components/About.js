@@ -8,7 +8,9 @@ function About() {
             <MDBContainer fluid>
                 <MDBRow>
                     <MDBCol md="6" className="section-about__image">
+
                         <img style={{ "height": "70vh", "width": "70vh" }} src={sideImage} alt=""></img>
+
                     </MDBCol>
                     <MDBCol md="6" className="section-about__text">
                         <div className="section-about__text__box">
@@ -19,7 +21,7 @@ function About() {
                                 employees and students participation it is India's largest cleanliness drive.
                                 We aim to take a step further in this campaign with the help of modern resource.
                                 And help people to take full utilization of facilities provided by government
-                                to keep our country clean.
+                                to keep our country 
                             </p>
                         </div>
                     </MDBCol>

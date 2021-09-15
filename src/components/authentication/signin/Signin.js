@@ -1,6 +1,7 @@
 import React from 'react'
 import name from 'images/sign-up/name.png'
 import Card from 'components/authentication/signin/Card'
+import DriverSignIn from './DriverSignIn'
 
 function Signin() {
     return (
@@ -16,6 +17,9 @@ function Signin() {
                 </div>
                 <div className="signin__flex-child">
                     <Card />
+                </div>
+                <div className="signin__flex-child">
+                    <DriverSignIn />
                 </div>
             </div>
         </div>

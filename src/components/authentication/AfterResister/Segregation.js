@@ -1,6 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { MDBRow, MDBCol } from 'mdb-react-ui-kit'
-
+import Search from './Search'
 import rec from '../../../images/Afterlogin/rec.jpg'
 import blue from '../../../images/Afterlogin/bluejpg.jpg'
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward'
@@ -81,7 +82,9 @@ export default function Article() {
                     particular items
                 </div>
                 <div>
-                    <MDBBtn>Search</MDBBtn>
+                <Link to="/search"><MDBBtn>Search
+                    
+                    </MDBBtn></Link>
                 </div>
             </div>
         </div>
